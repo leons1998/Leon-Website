@@ -3,22 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
+    <meta name="description" content="Tesla Accessories in Slovenia - Buy quality accessories for your Tesla car.">
+    <title>Tesla Accessories Slovenia</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <!-- Header -->
     <header>
-        <h1>Prodaja  Accessories</h1>
+        <div class="logo">
+            <h1>Tesla Accessories Slovenia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-            <button id="changeTextButton">Click me</button>
-            <p id="message">This is a clickable button.</p>
-        
-        <p>This is my first webpage! I'm learning how to make websites. Prodaja Tesla izdelkov.</p>
+
+    <!-- Main Banner -->
+    <section id="home" class="hero">
+        <h2>Welcome to the Best Tesla Accessories in Slovenia!</h2>
+        <p>Shop for high-quality accessories tailored for your Tesla car.</p>
     </section>
+
+    <!-- Products Section -->
+    <section id="products" class="product-list">
+        <h2>Featured Products</h2>
+
+        <!-- Product Cards -->
+        <div class="product-card">
+            <img src="assets/tesla-charger.jpg" alt="Tesla Car Charger">
+            <h3>Tesla Car Charger</h3>
+            <p class="price">€120</p>
+            <button onclick="addToCart('Tesla Car Charger', 120)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/tesla-floor-mats.jpg" alt="Tesla Floor Mats">
+            <h3>Tesla Floor Mats</h3>
+            <p class="price">€80</p>
+            <button onclick="addToCart('Tesla Floor Mats', 80)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/tesla-seat-covers.jpg" alt="Tesla Seat Covers">
+            <h3>Tesla Seat Covers</h3>
+            <p class="price">€99</p>
+            <button onclick="addToCart('Tesla Seat Covers', 99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Created by Leon</p>
+        <p>&copy; 2024 Tesla Accessories Slovenia | All rights reserved</p>
+        <p>Made with love in Slovenia.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
